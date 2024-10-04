@@ -7,9 +7,9 @@ TypeScript memahami JavaScript dan menggunakan type inference untuk memberikan p
 `INPUT (TS) -> Proses (TSC) -> Output (JS)`
 
 ## System yang digunakan
-Node v18.20.2
-NPM v1.1.12
-TSC v5.6.2
+- Node v18.20.2
+- NPM v1.1.12
+- TSC v5.6.2
 
 ## Installation TypeScript
 
@@ -24,9 +24,17 @@ npm install -g typescript
 ```
 
 ### Check versi TypeScript
-`tsc -v`
+```
+tsc -v
+```
 
 ### Cara jalankan 
+cara jalankan keseluruhan
+```
+tsc
+```
+
+cara run manual 
 ```
 tsc path/to/file.ts --outDir path/to/output/folder
 ```
@@ -43,7 +51,9 @@ node .\dist\hello.js
 ```
 
 ### Init TypeScript
-`tsc --init`
+```
+tsc --init
+```
 
 Dengan perintah diatas akan membuat sebuah file `tsconfig.json`, dimana file itu untuk configurasi typescript.
 
