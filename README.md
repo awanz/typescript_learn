@@ -69,3 +69,4 @@ Disini akan diberikan contoh cara mengatur folder typescript dan hasil outputnya
 
 ## List Learn
 1. [Basic Type](docs/data-type.md)
+2. [Function](docs/function.md)
