@@ -6,7 +6,7 @@ TypeScript memahami JavaScript dan menggunakan type inference untuk memberikan p
 
 `INPUT (TS) -> Proses (TSC) -> Output (JS)`
 
-## System yang digunakan
+## System yang digunakan pada pembuatan module ini
 - Node v18.20.2
 - NPM v1.1.12
 - TSC v5.6.2
@@ -28,28 +28,6 @@ npm install -g typescript
 tsc -v
 ```
 
-### Cara jalankan 
-cara jalankan keseluruhan
-```
-tsc
-```
-
-cara run manual 
-```
-tsc path/to/file.ts --outDir path/to/output/folder
-```
-
-contoh 
-```
-tsc .\src\hello.ts --outDir .\dist\
-```
-
-lalu run dengan nodejs
-
-```
-node .\dist\hello.js
-```
-
 ### Init TypeScript
 ```
 tsc --init
@@ -65,6 +43,38 @@ Disini akan diberikan contoh cara mengatur folder typescript dan hasil outputnya
             "rootDir": "./src", // Folder TypeScript
         }
     }
+```
+
+### Cara jalankan 
+cara compile semua file .ts menjadi file .js
+```
+tsc
+```
+
+cara compile manual di file .ts tertentu 
+```
+tsc path/to/file.ts --outDir path/to/output/folder
+```
+
+cara compile lebih dari satu file .ts yang dipilih
+```
+tsc path/to/file.ts path/to/file_kedua.ts --outDir path/to/output/folder
+```
+
+contoh compile hello.ts
+```
+tsc .\src\hello.ts --outDir .\dist\
+```
+
+contoh compile hello.ts dan export.ts
+```
+tsc .\src\hello.ts .\src\export.ts --outDir .\dist\
+```
+
+Cara run file .js dengan nodejs
+
+```
+node .\dist\hello.js
 ```
 
 Sebelum mempelajari lebih lanjut, disarankan untuk mempelajari javascript terlebih dahulu.
